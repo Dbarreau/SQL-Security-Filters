@@ -13,7 +13,7 @@ SELECT *
 FROM log_in_attempts
 WHERE login_time > '18:00' AND success = False;
 ```
----
+
 
 ##Retrieve Login Attempts on Specific Dates
 
@@ -24,7 +24,7 @@ SELECT *
 FROM log_in_attempts 
 WHERE login_date = '2022-05-09' OR login_date < '2022-05-09';
 ```
----
+
 
 This selects all login attempts on 2022-05-09 or earlier. The OR operator makes sure both dates are included.
 
@@ -38,7 +38,6 @@ WHERE NOT country LIKE 'Mex%';
 ```
 This returns all logins not from Mexico. I used NOT with LIKE and % because the data has different forms of Mexico, like “MEX” or “MEXICO.”
 
----
 
 ##Retrieve employess in Marketing
 The Marketing department in the East building needs computer updates. I had to find which employees to update.
@@ -49,7 +48,7 @@ FROM employees
 WHERE department = 'Marketing' AND Office LIKE 'East%';
 ```
 This gets all employees in Marketing at the East building. The AND operator makes sure both conditions are true.
----
+
 
 ##Retrieve employees in Finance and Sales
 Finance and Sales employees also need updates, but they require a different update.
@@ -59,7 +58,7 @@ FROM employees
 WHERE department = 'Finance' OR department = 'Sales';
 ```
 This query selects employees in either Finance or Sales. I used OR because I want employees from either department, not just both.
----
+
 
 ##Retrieve employees that are not in IT
 Finally, I needed to get employees who are not in IT to apply one more security update.
@@ -70,10 +69,9 @@ FROM employees
 WHERE NOT department = 'Information Technology';
 ```
 This selects all employees who are not in IT.
----
+
 
 ##Summary
 
 I used SQL filters to find specific information in the log_in_attempts and employees tables. I used AND, OR, and NOT to filter results and LIKE with % to find patterns. This helped me investigate failed logins, find employees in certain departments, and make sure updates were applied correctly.
 
----
