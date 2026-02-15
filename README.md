@@ -1,7 +1,9 @@
 # SQL Security Filters
+
 <p align="center">
-![SQLicon](SQL) 
+  <img src="SQL" alt="SQL icon">
 </p>
+
 
 ## Project Description
 My organization wants to make its systems more secure. I help check the system, look for any potential security problems, and make sure employee computers are updated. Below are examples of how I used SQL filters to look at security-related data.
