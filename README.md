@@ -1,5 +1,4 @@
-<p align="center"> # SQL Security Filters 
-</p>
+# SQL Security Filters 
 
 <p align="center">
   <img src="SQL" alt="SQL icon">
