@@ -35,9 +35,9 @@ FROM log_in_attempts
 WHERE login_date = '2022-05-09' OR login_date < '2022-05-09';
 ```
 <p align="center">
-
-![Login Attempts on Specific Dates](Dates)
+  <img src="Dates" alt="Login Attempts on Specific Dates">
 </p>
+
 
 This selects all login attempts on 2022-05-09 or earlier. The OR operator makes sure both dates are included.
 
@@ -53,8 +53,9 @@ WHERE NOT country LIKE 'Mex%';
 ```
 This returns all logins not from Mexico. I used NOT with LIKE and % because the data has different forms of Mexico, like “MEX” or “MEXICO.”
 
+
 <p align="center">
-![Login Attempts Outside Mexico](Outside%20of%20Mexico)
+  <img src="Outside%20of%20Mexico" alt="Login Attempts Outside Mexico">
 </p>
 
 ---
@@ -69,9 +70,11 @@ WHERE department = 'Marketing' AND Office LIKE 'East%';
 ```
 This gets all employees in Marketing at the East building. The AND operator makes sure both conditions are true.
 
+
 <p align="center">
-![Employees in Marketing](Marketing)
+  <img src="Marketing" alt="Employees in Marketing">
 </p>
+
 
 ---
 
@@ -83,8 +86,9 @@ FROM employees
 WHERE department = 'Finance' OR department = 'Sales';
 ```
 <p align="center">
-![Employees in Finance or Sales](Finance%20or%20Sales)
+  <img src="Finance%20or%20Sales" alt="Employees in Finance or Sales">
 </p>
+
 
 This query selects employees in either Finance or Sales. I used OR because I want employees from either department, not just both.
 
@@ -98,8 +102,9 @@ SELECT *
 FROM employees
 WHERE NOT department = 'Information Technology';
 ```
+
 <p align="center">
-![Employees Not in IT](No%20IT)
+  <img src="No%20IT" alt="Employees Not in IT">
 </p>
 
 This selects all employees who are not in IT.
