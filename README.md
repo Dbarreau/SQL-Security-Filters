@@ -27,7 +27,7 @@ SELECT *
 FROM log_in_attempts 
 WHERE login_date = '2022-05-09' OR login_date < '2022-05-09';
 ```
-![Login Attempts on Specific Dates](Dates.png)
+![Login Attempts on Specific Dates](Dates)
 
 This selects all login attempts on 2022-05-09 or earlier. The OR operator makes sure both dates are included.
 
@@ -43,7 +43,7 @@ WHERE NOT country LIKE 'Mex%';
 ```
 This returns all logins not from Mexico. I used NOT with LIKE and % because the data has different forms of Mexico, like “MEX” or “MEXICO.”
 
-![Login Attempts Outside Mexico](Outside%20of%20Mexico.png)
+![Login Attempts Outside Mexico](Outside%20of%20Mexico)
 
 ---
 
@@ -57,7 +57,7 @@ WHERE department = 'Marketing' AND Office LIKE 'East%';
 ```
 This gets all employees in Marketing at the East building. The AND operator makes sure both conditions are true.
 
-![Employees in Marketing](Marketing.png)
+![Employees in Marketing](Marketing)
 
 ---
 
@@ -68,7 +68,7 @@ SELECT *
 FROM employees
 WHERE department = 'Finance' OR department = 'Sales';
 ```
-![Employees in Finance or Sales](Finance%20or%20Sales.png)
+![Employees in Finance or Sales](Finance%20or%20Sales)
 
 This query selects employees in either Finance or Sales. I used OR because I want employees from either department, not just both.
 
@@ -83,7 +83,7 @@ FROM employees
 WHERE NOT department = 'Information Technology';
 ```
 
-![Employees Not in IT](No%20IT.png)
+![Employees Not in IT](No%20IT)
 
 This selects all employees who are not in IT.
 
